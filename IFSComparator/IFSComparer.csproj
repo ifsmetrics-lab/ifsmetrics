@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IFSComparator</RootNamespace>
+    <AssemblyName>IFSComparator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <Commandlineparameters>../../../input/config/Experiment-demo.xml</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Params\ExperimentConfig.cs" />
+    <Compile Include="Params\ComparisonProcessParams.cs" />
+    <Compile Include="Params\Categories.cs" />
+    <Compile Include="Params\Category.cs" />
+    <Compile Include="Params\Scenario.cs" />
+    <Compile Include="Params\Scenarios.cs" />
+    <Compile Include="Measures\AgreementOnDecisionSM.cs" />
+    <Compile Include="Measures\CosineSM.cs" />
+    <Compile Include="Measures\EuclideanSM.cs" />
+    <Compile Include="Measures\HammingSM.cs" />
+    <Compile Include="Measures\IFSMeasure.cs" />
+    <Compile Include="Params\SimilarityMeasures.cs" />
+    <Compile Include="Measures\VBSM.cs" />
+    <Compile Include="Measures\XVBSM.cs" />
+    <Compile Include="Measures\SK1SM.cs" />
+    <Compile Include="Measures\SK2SM.cs" />
+    <Compile Include="Measures\SK3SM.cs" />
+    <Compile Include="Measures\SK4SM.cs" />
+    <Compile Include="IO\SimilaritiesWriter.cs" />
+    <Compile Include="Measures\XVBrSM.cs" />
+    <Compile Include="IFSComparerThread.cs" />
+    <Compile Include="Params\Source.cs" />
+    <Compile Include="Params\Sources.cs" />
+    <Compile Include="Measures\GGDMSM.cs" />
+    <Compile Include="Measures\Xu17SM.cs" />
+    <Compile Include="Measures\Xu19SM.cs" />
+    <Compile Include="Measures\Xu21SM.cs" />
+    <Compile Include="Measures\CCSM.cs" />
+    <Compile Include="Measures\ChSM.cs" />
+    <Compile Include="Measures\HKSM.cs" />
+    <Compile Include="Measures\BASM.cs" />
+    <Compile Include="Measures\HY15SM.cs" />
+    <Compile Include="Measures\HY16SM.cs" />
+    <Compile Include="Measures\HY17SM.cs" />
+    <Compile Include="Measures\N26SM.cs" />
+    <Compile Include="Measures\XY19SM.cs" />
+    <Compile Include="IO\ReferencesWriter.cs" />
+    <Compile Include="Params\Reference.cs" />
+    <Compile Include="Params\References.cs" />
+    <Compile Include="Measures\LOQSM.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Params\" />
+    <Folder Include="IO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IFSSharedObjects\IFSSharedObjects.csproj">
+      <Project>{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}</Project>
+      <Name>IFSSharedObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

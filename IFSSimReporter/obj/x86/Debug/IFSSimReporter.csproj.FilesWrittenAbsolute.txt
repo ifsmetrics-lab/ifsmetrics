@@ -1,0 +1,5 @@
+/home/marc/Development/IFSApps/IFSSimReporter/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/marc/Development/IFSApps/output/bin/Debug/IFSSimReporter.exe.mdb
+/home/marc/Development/IFSApps/output/bin/Debug/IFSSimReporter.exe
+/home/marc/Development/IFSApps/IFSSimReporter/obj/x86/Debug/IFSSimReporter.exe
+/home/marc/Development/IFSApps/IFSSimReporter/obj/x86/Debug/IFSSimReporter.exe.mdb

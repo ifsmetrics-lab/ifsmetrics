@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSBuilder", "IFSBuilder\IFSBuilder.csproj", "{FA66CB99-91A5-4BCC-AEC5-5B0F04780281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSSharedObjects", "IFSSharedObjects\IFSSharedObjects.csproj", "{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSComparer", "IFSComparator\IFSComparer.csproj", "{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IFSSimReporter", "IFSSimReporter\IFSSimReporter.csproj", "{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}.Release|x86.Build.0 = Release|Any CPU
+		{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}.Debug|x86.ActiveCfg = Debug|x86
+		{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}.Debug|x86.Build.0 = Debug|x86
+		{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}.Release|x86.ActiveCfg = Release|x86
+		{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}.Release|x86.Build.0 = Release|x86
+		{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}.Debug|x86.ActiveCfg = Debug|x86
+		{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}.Debug|x86.Build.0 = Debug|x86
+		{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}.Release|x86.ActiveCfg = Release|x86
+		{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}.Release|x86.Build.0 = Release|x86
+		{FA66CB99-91A5-4BCC-AEC5-5B0F04780281}.Debug|x86.ActiveCfg = Debug|x86
+		{FA66CB99-91A5-4BCC-AEC5-5B0F04780281}.Debug|x86.Build.0 = Debug|x86
+		{FA66CB99-91A5-4BCC-AEC5-5B0F04780281}.Release|x86.ActiveCfg = Release|x86
+		{FA66CB99-91A5-4BCC-AEC5-5B0F04780281}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

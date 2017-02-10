@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9153CBEE-EC4F-418B-9C0A-6B0E7661D183}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IFSSimReporter</RootNamespace>
+    <AssemblyName>IFSSimReporter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <Commandlineparameters>../../../input/config/Experiment-demo.xml</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Params\ExperimentConfig.cs" />
+    <Compile Include="Params\ReportingProcessParams.cs" />
+    <Compile Include="Entities\CAT_SM_SCN1_SCN2.cs" />
+    <Compile Include="IO\SimilaritiesReader.cs" />
+    <Compile Include="Templates\PDFTemplate.cs" />
+    <Compile Include="Utils\Statistics.cs" />
+    <Compile Include="Reports\GNUPlotBasedChart.cs" />
+    <Compile Include="Reports\SimVsOpp_AllCategoriesChart.cs" />
+    <Compile Include="Reports\SimVsOpp_SpecificCategoryChart.cs" />
+    <Compile Include="Reports\SimVsOppLinearModel_AllCategoriesChart.cs" />
+    <Compile Include="Reports\SimVsOppLinearModel_SpecificCategoryChart.cs" />
+    <Compile Include="Reports\mIndicesTable.cs" />
+    <Compile Include="Reports\mIndices_AllCategoriesTable.cs" />
+    <Compile Include="Reports\ConsolidatedReport.cs" />
+    <Compile Include="IO\ReferencesReader.cs" />
+    <Compile Include="Entities\Reference.cs" />
+    <Compile Include="Entities\References.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Params\" />
+    <Folder Include="Entities\" />
+    <Folder Include="IO\" />
+    <Folder Include="Templates\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IFSSharedObjects\IFSSharedObjects.csproj">
+      <Project>{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}</Project>
+      <Name>IFSSharedObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\input\config\Experiment-demo.xml">
+      <Link>Experiment-demo.xml</Link>
+    </None>
+  </ItemGroup>
+</Project>
