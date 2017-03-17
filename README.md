@@ -1,4 +1,4 @@
-# IFSMetrics
+![IFSMetrics](IFSMetrics-logo-ext.png)
 
 ## Introduction
 *IFSMetrics* is a package containing modules whereby you can build intuitionistic fuzzy sets (IFSs) from real-world data, perform similarity comparisons between those IFSs and generate a comprehensive report with the results of such comparisons. As such, *IFSMetrics* aims for the design of similarity measures that perform reliable comparisons between IFSs.
