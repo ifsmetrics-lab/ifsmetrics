@@ -23,6 +23,17 @@ In the current version of IFSMetrics, IFSs are derived from the RCV1-v2 dataset:
 ## Getting started with IFSMetrics
 The [getting started](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/Getting-Started) wiki page explains how to start using IFSMetrics.
 
-### License
+## License
 IFSMetrics is released under the [Apache License, Version 2.0](LICENSE).
 
+## Further reading
+- IFSBuilder Tutorials
+  - [How to configure the scenarios, categories and parameters that will be used during a building process](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Configure-A-Building-Process)
+  - [How to perform a building process with MonoDevelop](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Perform-A-Building-Process-With-MonoDevelop)
+- IFSComparer Tutorials
+  - [How to configure the scenarios, categories and similarity measures that will be used during a comparison  process](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Configure-A-Comparison-Process)
+  - [How to perform a comparison process with MonoDevelop](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Perform-A-Comparison-Process-With-MonoDevelop)
+  - [How to develop a new similarity measure](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Develop-A-New-Similarity-Measure)
+- IFSSimReporter Tutorials
+  - [How to configure the reporting preferences that will be used during a reporting process](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Configure-A-Reporting-Process)
+  - [How to perform a reporting process with MonoDevelop](https://github.com/ifsmetrics-lab/ifsmetrics/wiki/How-To-Perform-A-Reporting-Process-With-MonoDevelop)
