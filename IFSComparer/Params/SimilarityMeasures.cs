@@ -35,7 +35,10 @@ namespace IFSComparer.Params
 			XmlElement("HY16SM", typeof(HY16SM)),
 			XmlElement("HY17SM", typeof(HY17SM)),
 			XmlElement("N26SM", typeof(N26SM)),
-			XmlElement("XY19SM", typeof(XY19SM))
+			XmlElement("XY19SM", typeof(XY19SM)),
+			// -----
+			XmlElement("Ex01SM", typeof(Ex01SM))  // <--- the new similarity measure
+			// ----
 
 			]
 		public ArrayList SMConfigs;

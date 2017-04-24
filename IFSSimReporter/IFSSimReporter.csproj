@@ -19,7 +19,7 @@
     <WarningLevel>4</WarningLevel>
     <Externalconsole>true</Externalconsole>
     <PlatformTarget>x86</PlatformTarget>
-    <Commandlineparameters>../../../input/config/Experiment-demo.xml</Commandlineparameters>
+    <Commandlineparameters>../../../input/config/experiment-tutorial.xml</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
@@ -70,10 +70,5 @@
       <Project>{0A0FBD8B-349E-429D-8DEA-6E5A67A5709E}</Project>
       <Name>IFSSharedObjects</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\input\config\Experiment-demo.xml">
-      <Link>Experiment-demo.xml</Link>
-    </None>
   </ItemGroup>
 </Project>

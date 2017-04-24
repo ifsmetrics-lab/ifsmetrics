@@ -36,12 +36,14 @@ namespace IFSSharedObjects.IO
 					if (!currentLine.StartsWith("#"))
 					{
 						String[] parts = currentLine.Split(seps);
-						Models.IFSElement el = new Models.IFSElement();
-						el.ElementId = Int32.Parse(parts[0]);
-						el.Membership = Double.Parse(parts[1]);
-						el.Nonmembership = Double.Parse(parts[2]);
-
-						ifs.Add(el.ElementId, el);
+						if(parts.Length >= 3){
+							Models.IFSElement el = new Models.IFSElement();
+							el.ElementId = Int32.Parse(parts[0]);
+							el.Membership = Double.Parse(parts[1]);
+							el.Nonmembership = Double.Parse(parts[2]);
+				
+							ifs.Add(el.ElementId, el);
+						}
 					}                  
 				}
 			}

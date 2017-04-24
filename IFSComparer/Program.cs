@@ -5,6 +5,9 @@ using IFSComparer.IO;
 using System.Xml.Serialization;
 using IFSSharedObjects.Diagnostics;
 using System.Threading;
+using IFSSharedObjects.Models;
+using IFSSharedObjects.IO;
+
 
 namespace IFSComparer
 {
@@ -56,6 +59,14 @@ namespace IFSComparer
 					PrintVersion ();
 					return 0;
 				}
+				else if (prm == "--single" || prm == "-s") {
+					string strFile1, strFile2;
+
+					strFile1 = args [1];
+					strFile2 = args [2];
+
+					return SingleComparison(strFile1, strFile2);
+				}
 				else {
 					return MainProcess (prm);
 				}
@@ -63,9 +74,35 @@ namespace IFSComparer
 			return 0;
 		}
 
+		static int SingleComparison(string strFile1, string strFile2){
+			// -s  file1 file1
+
+			IFS ifs1 = new IFS(strFile1.Substring(strFile1.LastIndexOf("/") + 1));
+			IFS ifs2 = new IFS(strFile2.Substring(strFile2.LastIndexOf("/") + 1));
+
+
+			IFSReader reader1 = new IFSReader(strFile1);
+			IFSReader reader2 = new IFSReader(strFile2);
+
+			reader1.ReadTo(ifs1);
+			reader2.ReadTo(ifs2);
+
+			ifs1.EnsureIFSDefinition();
+			ifs2.EnsureIFSDefinition();
+
+			IFSMeasure measure = new XVBrSM (0.5, 2);
+			double sim = measure.GetSimilarity (ifs1, ifs2);
+
+			Console.WriteLine(String.Format("sim({0},{1}) = {2:F4}", ifs1.Name, ifs2.Name, sim));
+
+			return 0;
+		}
+
 
 		static int MainProcess(string configFile)
 		{
+			// ../../../input/config/experiment-tutorial.xml
+
 			Log log;
 			int ret = 0;
 
