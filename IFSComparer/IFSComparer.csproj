@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{3F9E29DB-D174-4EBA-B040-EF07AC5D51AD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>IFSComparator</RootNamespace>
-    <AssemblyName>IFSComparator</AssemblyName>
+    <RootNamespace>IFSComparer</RootNamespace>
+    <AssemblyName>IFSComparer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -19,7 +19,7 @@
     <WarningLevel>4</WarningLevel>
     <Externalconsole>true</Externalconsole>
     <PlatformTarget>x86</PlatformTarget>
-    <Commandlineparameters>../../../input/config/Experiment-demo.xml</Commandlineparameters>
+    <Commandlineparameters>../../../input/config/experiment-tutorial.xml</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>full</DebugType>
@@ -78,6 +78,7 @@
     <Compile Include="Params\Reference.cs" />
     <Compile Include="Params\References.cs" />
     <Compile Include="Measures\LOQSM.cs" />
+    <Compile Include="Measures\Ex01SM.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -43,24 +43,19 @@
 				<OppositesPercentage>0</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R20</Code>
-				<Description>R20</Description>
-				<OppositesPercentage>0.2</OppositesPercentage>
+				<Code>R25</Code>
+				<Description>R25</Description>
+				<OppositesPercentage>0.25</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R40</Code>
-				<Description>R40</Description>
-				<OppositesPercentage>0.4</OppositesPercentage>
+				<Code>R50</Code>
+				<Description>R50</Description>
+				<OppositesPercentage>0.5</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R60</Code>
-				<Description>R60</Description>
-				<OppositesPercentage>0.6</OppositesPercentage>
-			</Scenario>
-			<Scenario>
-				<Code>R80</Code>
-				<Description>R80</Description>
-				<OppositesPercentage>0.8</OppositesPercentage>
+				<Code>R75</Code>
+				<Description>R75</Description>
+				<OppositesPercentage>0.75</OppositesPercentage>
 			</Scenario>
 			<Scenario>
 				<Code>R100</Code>
@@ -87,12 +82,27 @@
 	<ComparisonProcessParams>
 		<nDocumentsInEvaluationBatch>50</nDocumentsInEvaluationBatch>
 		<Sources>
-			<Source>
-				<Code>1</Code>
-				<DocumentsFile>/home/marc/share/datasets/RCV1/lyrl2004_tokens_test_pt0.dat</DocumentsFile>
-				<nDocuments>2500</nDocuments>
-			</Source>
-		</Sources>
+				<Source>
+					<Code>1</Code>
+					<DocumentsFile>/home/marc/share/datasets/RCV1/lyrl2004_tokens_test_pt0.dat</DocumentsFile>
+					<nDocuments>500</nDocuments>
+				</Source>
+				<Source>
+					<Code>2</Code>
+					<DocumentsFile>/home/marc/share/datasets/RCV1/lyrl2004_tokens_test_pt1.dat</DocumentsFile>
+					<nDocuments>500</nDocuments>
+				</Source>
+				<Source>
+					<Code>3</Code>
+					<DocumentsFile>/home/marc/share/datasets/RCV1/lyrl2004_tokens_test_pt2.dat</DocumentsFile>
+					<nDocuments>500</nDocuments>
+				</Source>
+				<Source>
+					<Code>4</Code>
+					<DocumentsFile>/home/marc/share/datasets/RCV1/lyrl2004_tokens_test_pt3.dat</DocumentsFile>
+					<nDocuments>500</nDocuments>
+				</Source>
+			</Sources>
 		<Scenarios>
 			<Scenario>
 				<Code>R0</Code>
@@ -100,24 +110,19 @@
 				<OppositesPercentage>0</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R20</Code>
-				<Description>R20</Description>
-				<OppositesPercentage>0.2</OppositesPercentage>
+				<Code>R25</Code>
+				<Description>R25</Description>
+				<OppositesPercentage>0.25</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R40</Code>
-				<Description>R40</Description>
-				<OppositesPercentage>0.4</OppositesPercentage>
+				<Code>R50</Code>
+				<Description>R50</Description>
+				<OppositesPercentage>0.5</OppositesPercentage>
 			</Scenario>
 			<Scenario>
-				<Code>R60</Code>
-				<Description>R60</Description>
-				<OppositesPercentage>0.6</OppositesPercentage>
-			</Scenario>
-			<Scenario>
-				<Code>R80</Code>
-				<Description>R80</Description>
-				<OppositesPercentage>0.8</OppositesPercentage>
+				<Code>R75</Code>
+				<Description>R75</Description>
+				<OppositesPercentage>0.75</OppositesPercentage>
 			</Scenario>
 			<Scenario>
 				<Code>R100</Code>
@@ -152,120 +157,6 @@
 			<AgreementOnDecisionSM>
 				<Code>AoD</Code>
 			</AgreementOnDecisionSM>
-
-			<VBSM>
-				<Code>VB-0.5</Code>
-				<Alpha>0.5</Alpha>
-			</VBSM>
-			<HammingSM>
-				<Code>H3D</Code>
-				<HammingType>ThreeDimensions</HammingType>
-			</HammingSM>
-			<EuclideanSM>
-				<Code>E-3D</Code>
-				<EuclideanType>ThreeDimensions</EuclideanType>
-			</EuclideanSM>
-			<GGDMSM>
-				<Code>GGeo-3D-2</Code>
-				<GGDMSMType>ThreeDimensions</GGDMSMType>
-				<Alpha>2</Alpha>
-			</GGDMSM>
-			<GGDMSM>
-				<Code>GGeo-3D-1</Code>
-				<GGDMSMType>ThreeDimensions</GGDMSMType>
-				<Alpha>1</Alpha>
-			</GGDMSM>
-			<GGDMSM>
-				<Code>GGeo-3D-4</Code>
-				<GGDMSMType>ThreeDimensions</GGDMSMType>
-				<Alpha>4</Alpha>
-			</GGDMSM>
-			<Xu17SM>
-				<Code>X17-2</Code>
-				<Alpha>2</Alpha>
-			</Xu17SM>
-			<Xu17SM>
-				<Code>X17-0.5</Code>
-				<Alpha>0.5</Alpha>
-			</Xu17SM>
-			<Xu19SM>
-				<Code>X19</Code>
-			</Xu19SM>
-			<Xu21SM>
-				<Code>X21</Code>
-			</Xu21SM>
-			<CCSM>
-				<Code>CC</Code>
-			</CCSM>
-			<ChSM>
-				<Code>Ch</Code>
-			</ChSM>
-			<HKSM>
-				<Code>HK</Code>
-			</HKSM>
-			<HY15SM>
-				<Code>HY15</Code>
-			</HY15SM>
-			<HY16SM>
-				<Code>HY16</Code>
-			</HY16SM>
-			<HY16SM>
-				<Code>HY16</Code>
-			</HY16SM>
-			<BASM>
-				<Code>BA-1-2</Code>
-				<P>1</P>
-				<S>2</S> 
-			</BASM>
-			<BASM>
-				<Code>BA-2-4</Code>
-				<P>2</P>
-				<S>4</S> 
-			</BASM>
-			<N26SM>
-				<Code>N26</Code>
-			</N26SM>
-			<XY19SM>
-				<Code>XY19</Code>
-			</XY19SM>
-			<CosineSM>
-				<Code>COS</Code>
-			</CosineSM>
-			<SK1SM>
-				<Code>SK1-2D</Code>
-				<SK1Type>TwoDimensions</SK1Type>
-			</SK1SM>
-			<SK2SM>
-				<Code>SK2-2D</Code>
-				<SK2Type>TwoDimensions</SK2Type>
-			</SK2SM>
-			<SK3SM>
-				<Code>SK3-2D</Code>
-				<SK3Type>TwoDimensions</SK3Type>
-			</SK3SM>
-			<SK4SM>
-				<Code>SK4-2D</Code>
-				<SK4Type>TwoDimensions</SK4Type>
-			</SK4SM>
-			<XVBSM>
-				<Code>XVB-0-0.05</Code>
-				<Alpha>0</Alpha>
-				<Wide>0.05</Wide>
-				<MiddleMarkWeight>1</MiddleMarkWeight>
-				<UpMarkWeight>0.01</UpMarkWeight>
-				<DownMarkWeight>0.01</DownMarkWeight>
-				<K>5</K>
-			</XVBSM>
-			<XVBSM>
-				<Code>XVB-0-0.1</Code>
-				<Alpha>0</Alpha>
-				<Wide>0.1</Wide>
-				<MiddleMarkWeight>1</MiddleMarkWeight>
-				<UpMarkWeight>0.01</UpMarkWeight>
-				<DownMarkWeight>0.01</DownMarkWeight>
-				<K>5</K>
-			</XVBSM>
-
 			<XVBrSM>
 				<Code>XVBr-1-10</Code>
 				<Alpha>1</Alpha>
@@ -308,6 +199,14 @@
 				<Code>XVBr-0</Code>
 				<Alpha>0</Alpha>
 			</XVBrSM>
+			<!-- Ex01SM is part of the tutorial -->
+
+			<Ex01SM>
+				<Code>Ex01-0.4-0..6</Code>
+				<Alpha>0.4</Alpha>
+				<Beta>0.6</Beta>
+			</Ex01SM>
+
 		</Measures>
 	</ComparisonProcessParams>
 
